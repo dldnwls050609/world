@@ -1,0 +1,599 @@
+@charset "utf-8";
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+
+/* menu */
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD600;
+}
+
+header nav {
+    width: 600px;
+    background-color: #ffea82;
+}
+
+header nav>ul {
+    display: flex;
+}
+
+header a {
+    display: block;
+    text-align: center;
+    padding: 0px;
+}
+
+li.gnb {
+    width: 25%;
+    position: relative;
+}
+
+ul.sub {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    background-color: #eee;
+    display: none;
+}
+
+li.gnb:hover>a {
+    color: #fff;
+    background-color: #b19300;
+}
+
+ul.sub li:hover a {
+    color: #fff;
+    background-color: #ffea82;
+}
+
+/* slide */
+.blur {
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    width: 15%;
+    height: 100%;
+    opacity: 50%;
+}
+
+.l {
+    top: 0;
+    left: 0;
+}
+
+.r {
+    top: 0;
+    right: 0;
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.slide h1 {
+    display: inline-block;
+    background-color: #FFD600;
+    padding: .5% 1.5%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: #fff;
+    position: absolute;
+    top: 68%;
+    left: 31%;
+    z-index: 2;
+}
+
+.slide .swiper {
+    height: 100%;
+}
+
+.slide .swiper .swiper-wrapper {
+    height: 100%;
+}
+
+.slide .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide .swiper .swiper-wrapper .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.slide .swiper .swiper-wrapper .slide1 a {
+    background: url(../images/slide01.1.jpg);
+}
+
+.slide .swiper .swiper-wrapper .slide2 a {
+    background: url(../images/slide01.2.jpg);
+}
+
+.slide .swiper .swiper-wrapper .slide3 a {
+    background: url(../images/slide01.3.jpg);
+}
+
+.slide .swiper .swiper-wrapper .slide4 a {
+    background: url(../images/slide01.4.jpg);
+}
+
+.slide .swiper .swiper-wrapper .slide5 a {
+    background: url(../images/slide01.5.jpg);
+}
+
+.slide .swiper .swiper-wrapper .swiper-slide .text {
+    position: absolute;
+    top: 43%;
+    left: 21%;
+    z-index: 2;
+}
+
+.slide .swiper .swiper-wrapper .swiper-slide .text h2 {
+    color: #FFD600;
+    font-size: 2rem;
+    text-shadow: 0 0px 5px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.slide .swiper .swiper-wrapper .swiper-slide .text h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    text-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+.slide .swiper {
+    position: relative;
+}
+
+/* 이미지 뒤에 배경 넣었을 때 삐져나오면 display block을 이미지쓰면 해결됨 */
+
+.slide .swiper .swiper-wrapper .five {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.slide .swiper .swiper-button-next {
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    --swiper-navigation-size: 25px;
+}
+
+.slide .swiper .swiper-button-prev {
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    --swiper-navigation-size: 25px;
+    /* 화살표 사이즈 */
+}
+
+.slide .swiper .swiper-pagination {
+    width: 38%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide .swiper-pagination-progressbar {
+    background-color: #fff;
+}
+
+.slide .swiper-pagination-progressbar-fill {
+    background-color: #FFD600;
+}
+
+/* main1 */
+.main1 {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.main1 h1 {
+    color: #FFD600;
+    font-size: 3.5rem;
+}
+
+.main1 h3 {
+    font-size: 1.5rem;
+    margin: 0.5% 0 2%;
+    font-weight: 400;
+}
+
+.main1 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main1 .container .hb {
+    position: relative;
+}
+
+.main1 .container .hb>img {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 10%;
+    z-index: 2;
+}
+
+.main1 .container .hb .i {
+    background-color: rgb(255, 208, 0);
+}
+
+.main1 .container .hb .i:hover img {
+    opacity: 0%;
+}
+
+.main1 .container .hb .i:hover .ht {
+    opacity: 1;
+}
+
+.main1 .container .hb .i img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    display: block;
+}
+
+.main1 .container .hb .i .ht {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: all .5s;
+}
+
+.main1 .container .hb .i .ht h2 {
+    font-size: 2rem;
+}
+
+.main1 .container .hb .i .ht h4 {
+    font-size: 1.2rem;
+}
+
+/* main2 */
+.main2 {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.main2 h1 {
+    color: #FFD600;
+    font-size: 3.5rem;
+}
+
+.main2 h3 {
+    font-size: 1.5rem;
+    margin: 0.5% 0 2%;
+    font-weight: 400;
+}
+
+.main2 h4 {
+    color: gray;
+    font-size: 1.3rem;
+    margin: 0.5% 0 2%;
+    display: inline-block;
+}
+
+.main2 .lg:hover {
+    color: #FFD600;
+    font-size: 1.3rem;
+    margin: 0.5% 0 2%;
+}
+
+.slide02 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.slide02 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    height: 500px;
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+
+
+.swiper-slide .i {
+    margin-right: 2rem;
+}
+
+.swiper-slide .t h1 {
+    font-size: 3rem;
+}
+
+.swiper-slide .t h4 {
+    margin-left: .5rem;
+}
+
+/* main3 */
+.main3 {
+    background: url('../images/reportbcc.png')center/cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 8%;
+    padding: 7% 0;
+}
+
+.main3 h1 {
+    font-size: 3.5rem;
+}
+
+.main3 h3 {
+    font-size: 1.5rem;
+    margin: 0.5% 0 2%;
+    font-weight: 400;
+}
+
+.main3 h4 {
+    color: gray;
+    font-size: 1.3rem;
+    margin: 0.5% 0 2%;
+    background-color: white;
+    display: inline-block;
+    width: 9rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 10px;
+}
+
+.main3 h4:hover {
+    color: #FFD600;
+}
+
+.main3 .report {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main3 .report img {
+    width: 30%;
+    height: 30%;
+}
+
+.main3 .report .support {
+    position: relative;
+    width: 30%;
+    height: 30%;
+}
+
+.main3 .report .support img {
+    width: 100%;
+    height: 100%;
+}
+
+.main3 .report .support .text {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    width: 50%;
+    height: 17%;
+    border: 2px solid #FFD600;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    line-height: 2.5rem;
+    transition: all .5s;
+}
+
+.main3 .report .support .text:hover {
+    background-color: #FFD600;
+}
+
+.main3 .report .support .text h1 {
+    font-size: 35px;
+    margin-top: 7.5%;
+    color: #FFD600;
+    line-height: 35px;
+    transition: all .5s;
+}
+
+.main3 .report .support .text:hover h1 {
+    color: #fff;
+}
+
+/* main4 */
+.main4 {
+    text-align: center;
+    padding: 8% 0;
+}
+
+.main4 h1 {
+    color: #FFD600;
+    font-size: 3.5rem;
+}
+
+.main4 h3 {
+    font-size: 1.5rem;
+    margin: 0.5% 0 2%;
+    font-weight: 400;
+}
+
+.main4 h4 {
+    color: gray;
+    font-size: 1.3rem;
+    margin: 0.5% 0 2%;
+}
+
+.main4 h4:hover {
+    color: #FFD600;
+}
+
+.main4 .newsbox {
+    border: 2px solid gray;
+    border-radius: 20px;
+    display: inline-block;
+    width: 75%;
+}
+
+.main4 .newsbox .line {
+    position: relative;
+    padding: 2% 0;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main4 .newsbox .line:last-child {
+    position: relative;
+    padding: 2% 0;
+    border-bottom: none;
+}
+
+.main4 .newsbox .line .news {
+    color: rgb(255, 217, 0);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.main4 .newsbox .line .text {
+    text-align: left;
+    margin-left: 18%;
+}
+
+.main4 .newsbox .line .news h2 {
+    font-size: 1.5rem;
+}
+
+.main4 .newsbox .line .text h2 {
+    font-size: 1.5rem;
+}
+
+.main4 .newsbox .line .text h5 {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    padding: 2% 0;
+    color: gray;
+}
+
+footer h1:hover {
+    color: white;
+    display: inline-block;
+}
+
+footer h2:hover {
+    color: white;
+    display: inline-block;
+}
+
+footer h3:hover {
+    color: white;
+    display: inline-block;
+}
+
+footer h4:hover {
+    color: white;
+    display: inline-block;
+}
+
+footer .container {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    height: 300px;
+}
+
+footer .container img {
+    width: 6%;
+}
+
+footer .container h1 {
+    font-size: 1.3rem;
+}
+
+footer .container h5 {
+    font-size: .9rem;
+}
+
+footer .container .t1 h1 {
+    border-right: 2px solid gray;
+    padding: 0 3%;
+}
+
+footer .container .t1 h1:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+footer .container .t1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer .container .tr0 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+footer .container .tl0 h1 {
+    margin-bottom: 5%;
+}
+
+footer .container .tl0 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+footer .container .bl0 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+footer .container .br0 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    text-align: right;
+}

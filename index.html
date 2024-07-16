@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js.main.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="mlogo">
+                <img src="images/hologoB.png" alt="">
+            </div>
+            <ul>
+                <li class="gnb"> <a href="#">국제구조위원회</a>
+                    <ul class="sub">
+                        <li> <a href="#">소개</a></li>
+                        <li><a href="#">아인슈타인과 역사</a></li>
+                        <li><a href="#">국제구조위원회 연혁</a></li>
+                        <li><a href="#">영향력 한눈에 보기</a></li>
+                    </ul>
+                </li>
+                <li class="gnb"> <a href="#">활동지역</a>
+                    <ul class="sub">
+                        <li><a href="#">위기국가</a></li>
+                        <li><a href="#">2024 세계 위기국가 보고서</a></li>
+                        <li><a href="#">2023 세계 위기국가 보고서</a></li>
+                        <li><a href="#">세계 위기국가 선정 기준</a></li>
+                        <li><a href="#">효과적인 긴급상황 대응</a></li>
+                    </ul>
+                </li>
+                <li class="gnb"> <a href="#">소식</a>
+                    <ul class="sub">
+                        <li><a href="#">뉴스</a> </li>
+                        <li><a href="#">최신 뉴스</a> </li>
+                        <li><a href="#">공지사항</a> </li>
+                        <li><a href="#">보도 자료</a> </li>
+                    </ul>
+                </li>
+                <li class="gnb"> <a href="#">주요사업</a>
+                    <ul class="sub">
+                        <li><a href="#">집중 활동</a> </li>
+                        <li><a href="#">의료</a> </li>
+                        <li><a href="#">안전</a> </li>
+                        <li><a href="#">경제적 안정</a> </li>
+                        <li><a href="#">교육</a> </li>
+                    </ul>
+                </li>
+                <li class="gnb"> <a href="#">참여하기</a>
+                    <ul class="sub">
+                        <li><a href="#">참여</a></li>
+                        <li><a href="#">후원하기</a> </li>
+                        <li><a href="#">정기후원의 영향력</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slide">
+        <div class="blur l"></div>
+        <div class="blur r"></div>
+        <h1>후원하기</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <a href="#">
+                        <div class="text">
+                            <h2>장동윤 홍보대사가 만난 에티오피아</h2>
+                            <h3>오랜 분쟁과 기후위기로 신음하는 에티오피아 사람들을 위해 <br>
+                                국제구조위원회 이동 의료팀을 후원해 주세요.</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide slide2">
+                    <a href="#">
+                        <div class="text">
+                            <h2>남성 보호자 없이는 병원에 갈 수 없는 소녀들</h2>
+                            <h3>남성 보호자 없이는 남성 의료진을 만날 수 없는 소녀와 여성들을 위해.. <br> 여러분의 도움이 필요합니다.</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide slide3">
+                    <a href="#">
+                        <div class="text">
+                            <h2>홍수 피해를 겪는 아이들을 지켜주세요.</h2>
+                            <h3>지금, 기후위기와 이상기후 현상이 불러온 폭우와 홍수로 <br> 생명이 위험한 상황에 놓인 아이들을 구조해 주세요.</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide slide4">
+                    <a href="#">
+                        <div class="text">
+                            <h2>가자 지구 어린이들을 도와주세요.</h2>
+                            <h3>200만 가자 지구 사람들에게 식량과 물, 안전한 공간과 <br> 의약품이 시급합니다.</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide slide5">
+                    <a href="#">
+                        <div class="text">
+                            <h2>배달의민족과 함께 영양실조 어린이 돕기</h2>
+                            <h3>영양실조에 아파하는 아이들을 도와주시면, <br> 배달의민족에서 사용하실 수 있는 쿠폰을 드립니다.</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                centeredSlides: true,
+                slidesPerView: 1.5,
+                spaceBetween: 100,
+                loop: true,
+                // autoplay: {
+                //     delay: 2500,
+                //     disableOnInterection: false,
+                // },
+            });
+        </script>
+    </div>
+    <div class="main1">
+        <h1>국제구조위원회 소개</h1>
+        <h3>인도적 위기에 처한 사람들이 생존, 회복하여 재건할 수 있도록 돕습니다.</h3>
+        <div class="container">
+            <div class="hb">
+                <img src="images/hologoB.png" alt="">
+                <div class="i">
+                    <img src="images/hoverimg1.jpg" alt="">
+                    <div class="ht">
+                        <h2>섬깁니다</h2>
+                        <h4>우리는 인도적 위기로 삶의 터전을 잃은 <br>
+                            사람들을 섬깁니다</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hb">
+                <img src="images/hologo.png" alt="">
+                <div class="i">
+                    <img src="images/hoverimg2.jpg" alt="">
+                    <div class="ht">
+                        <h2>일합니다</h2>
+                        <h4>우리는 필요한 지원을 받을 수 없는 <br> 가장 열악한 국가에서 일합니다</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hb">
+                <img src="images/hologoB.png" alt="">
+                <div class="i">
+                    <img src="images/hoverimg3.jpg" alt="">
+                    <div class="ht">
+                        <h2>대응합니다</h2>
+                        <h4>우리는 72시간 이내에 위기에 대응하며, <br> 필요로 하는 한 끝까지 머뭅니다</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hb">
+                <img src="images/hologo.png" alt="">
+                <div class="i">
+                    <img src="images/hoverimg4.jpg" alt="">
+                    <div class="ht">
+                        <h2>돕습니다</h2>
+                        <h4>우리는 유럽과 미국 전역에서 <br> 난민의 재정착을 돕습니다</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <h1>뉴스 & 특집</h1>
+        <h3>도움이 필요한 이들의 소식을 전해드립니다.</h3>
+        <h4 class="lg">바로가기</h4>
+        <div class="slide02">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="i">
+                            <img src="images/slide02.1.png" alt="">
+                        </div>
+                        <div class="t">
+                            <h1>장동윤 홍보대사가 에티오피아에서 <br>
+                                만난 국제구조위원회 이야기</h1>
+                            <h4>장동윤 홍보대사가 에티오피아에서 만난 사람들과 <br>
+                                국제구조위원회 이동 의료팀의 이야기를 만나보세요.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="i">
+                            <img src="images/slide02.2.png" alt="">
+                        </div>
+                        <div class="t">
+                            <h1>난민에 관해 알아야 할 6가지 사실</h1>
+                            <h4>난민과 망명 신청자에 대한 정확한 사실과 통계를 알고 싶으신가요? <br> 지금 여기서 확인해 보세요.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="i">
+                            <img src="images/slide02.3.png" alt="">
+                        </div>
+                        <div class="t">
+                            <h1>수단 위기: <br> 수단의 상황과 도울 수 있는 방법</h1>
+                            <h4>최근 분쟁 이전에도 수단은 이미 극심한 기상이변, <br> 사회 및 정치적 불안 그리고 식량 가격 상승에 직면해 있었습니다.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="i">
+                            <img src="images/slide02.4.png" alt="">
+                        </div>
+                        <div class="t">
+                            <h1>우크라이나: <br> 2년간의 전쟁 그리고 10년간의 분쟁</h1>
+                            <h4>러시아의 우크라이나 전면 침공 2년, 분쟁 10년을 맞이하여 주목해야 할 사실들</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper2 = new Swiper(".mySwiper2", {
+            effect: 'fade',
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            }, loop: true,
+        });
+    </script>
+    <div class="main3">
+        <h1>2024 세계 위기국가 보고서</h1>
+        <h3>기록적인 수의 사람들이 폭력과 박해를 피해 인도적 지원을 필요로하고 있습니다.</h3>
+        <h4>바로가기</h4>
+        <div class="report">
+            <img src="images/report1.png" alt="">
+            <img src="images/report2.png" alt="">
+            <div class="support">
+                <img src="images/report3.png" alt="">
+                <div class="text">
+                    <h1>후원하기</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <h1>새소식</h1>
+        <h3>매일 새로운 보도자료와 주요기사를 전합니다.</h3>
+        <h4>더보기</h4>
+        <div class="newsbox">
+            <div class="line">
+                <div class="news">
+                    <img src="images/news1.png" alt="">
+                    <h2>보도자료</h2>
+                </div>
+                <div class="text">
+                    <h2>라파 국경 폐쇄로 모든 인도적 지원이 차단되면서 국제구조위원회 활동에도 큰 타격</h2>
+                    <h5>2024년 05월 17일</h5>
+                </div>
+            </div>
+            <div class="line">
+                <div class="news"><img src="images/news1.png" alt="">
+                    <h2>보도자료</h2>
+                </div>
+                <div class="text">
+                    <h2>하르키우: 국제구조위원회, 보브찬스크 탈출하는 사람들 지원</h2>
+                    <h5>2024년 05월 17일</h5>
+                </div>
+            </div>
+            <div class="line">
+                <div class="news"><img src="images/news2.png" alt="">
+                    <h2>주요기사</h2>
+                </div>
+                <div class="text">
+                    <h2>전 세계 국제구조위원회의 하루를 만나보세요.</h2>
+                    <h5>후원의 영향력</h5>
+                </div>
+            </div>
+            <div class="line">
+                <div class="news"><img src="images/news2.png" alt="">
+                    <h2>주요기사</h2>
+                </div>
+                <div class="text">
+                    <h2>색채의 마술사, 샤갈도 국제구조위원회의 도움을 받은 난민이었던 사실을 아시나요?</h2>
+                    <h5>고객스토리</h5>
+                </div>
+            </div>
+            <div class="line">
+                <div class="news"><img src="images/news2.png" alt="">
+                    <h2>주요기사</h2>
+                </div>
+                <div class="text">
+                    <h2>장동윤 홍보대사가 에티오피아에서 만난 국제구조위원회 이야기</h2>
+                    <h5>SBS 희망TV</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="ftop">
+                <img src="images/flogo.png" alt="">
+                <div class="tl0">
+                    <h1>국제구조위원회 네트워크</h1>
+                    <div class="t5">
+                        <h5>미국/국제 본부</h5>
+                        <h5> 영국</h5>
+                        <h5>독일</h5>
+                        <h5>스웨덴</h5>
+                        <h5>유럽 연합</h5>
+                    </div>
+                </div>
+                <div class="tr0">
+                    <div class="t1">
+                        <h1>국제구조위원회</h1>
+                        <h1>활동 지역</h1>
+                        <h1>소식</h1>
+                        <h1>주요 사업</h1>
+                        <h1>참여하기</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bl0">
+                <h5>재단법인 국제구조위원회 <br>
+                    대표자:이은영 <br>
+                    고유번호:414-82-02799 <br>
+                    주소:서울특별시 강남구 언주로 432,13층 (역삼동, 타워432) <br>
+                    문의:korea@rescue.org <br>
+                    대표번호: 02-2088-2015 <br>
+                    계좌후원: 하나은행 340-910045-81904(재단법인 국제구조위원회)</h5>
+            </div>
+            <div class="br0">
+                <h3>회원 약관 / 개인정보 처리 방침</h3>
+                <h5>© 저작권 : 국제구조위원회 / International Rescue Committee Korea, 2024</h5>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
